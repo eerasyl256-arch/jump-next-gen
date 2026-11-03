@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Расписание матчей и турнирная таблица — Jump Next Gen</title>
+  <meta name="description" content="Расписание и результаты матчей школьной баскетбольной лиги, турнирная таблица сезона 2026/27 и удобный фильтр игр по командам.">
+  <meta name="keywords" content="расписание матчей, турнирная таблица, результаты игр, школьный баскетбол, команды лиги, сезон 2026/27, фильтр по командам, лига школьников">
+  <meta name="author" content="Школьный спортивный клуб">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0d">
+
+  <meta property="og:title" content="Расписание и таблица — Jump Next Gen">
+  <meta property="og:description" content="Когда и где играют команды лиги, чем закончились матчи и кто лидирует в таблице сезона 2026/27.">
+  <meta property="og:image" content="https://USERNAME.github.io/school-basketball-league/images/preview.jpg">
+  <meta property="og:url" content="https://USERNAME.github.io/school-basketball-league/schedule.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jump Next Gen — школьная баскетбольная лига">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="https://www.shutterstock.com/image-vector/basketball-ball-flaming-fire-element-260nw-2732177127.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Oswald:wght@700&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSn2q4985VlWwznks-L_wLXfJPf_gEGO9jfqyFVVrgQ&s=10" alt="" width="38" height="38">
+        Jump <b>Next Gen</b>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu">Меню</button>
+
+      <nav id="menu" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="schedule.html" aria-current="page">Матчи и таблица</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-title">
+      <div class="wrap">
+        <h1 class="logo-text">Матчи и таблица</h1>
+        <p>Сезон 2026/27, после 2-го тура</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <h2 class="tag">Турнирная таблица</h2>
+
+        <div class="tablebox">
+          <table>
+            <caption class="hidden">Турнирная таблица лиги</caption>
+            <thead>
+              <tr>
+                <th>Команда</th>
+                <th>И</th>
+                <th>В</th>
+                <th>П</th>
+                <th>Очки</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>next up</td>
+                <td class="n">2</td>
+                <td class="n">2</td>
+                <td class="n">0</td>
+                <td class="n">79:39</td>
+              </tr>
+              <tr>
+                <td>swagger</td>
+                <td class="n">2</td>
+                <td class="n">2</td>
+                <td class="n">0</td>
+                <td class="n">83:49</td>
+              </tr>
+              <tr>
+                <td>cold blooded</td>
+                <td class="n">2</td>
+                <td class="n">1</td>
+                <td class="n">1</td>
+                <td class="n">76:70</td>
+              </tr>
+              <tr>
+                <td>blessedone</td>
+                <td class="n">2</td>
+                <td class="n">1</td>
+                <td class="n">1</td>
+                <td class="n">50:55</td>
+              </tr>
+              <tr>
+                <td>nova elite</td>
+                <td class="n">2</td>
+                <td class="n">1</td>
+                <td class="n">1</td>
+                <td class="n">82:90</td>
+              </tr>
+              <tr>
+                <td>raptors</td>
+                <td class="n">2</td>
+                <td class="n">1</td>
+                <td class="n">1</td>
+                <td class="n">56:78</td>
+              </tr>
+              <tr>
+                <td>phoenix flame</td>
+                <td class="n">2</td>
+                <td class="n">0</td>
+                <td class="n">2</td>
+                <td class="n">48:64</td>
+              </tr>
+              <tr>
+                <td>spgrind</td>
+                <td class="n">2</td>
+                <td class="n">0</td>
+                <td class="n">2</td>
+                <td class="n">77:105</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section style="padding-top: 0;">
+      <div class="wrap">
+        <h2 class="tag hot">Расписание и результаты</h2>
+
+        <div class="filter">
+          <label for="teamFilter" style="margin: 0;">Показать матчи команды:</label>
+          <select id="teamFilter">
+            <option value="all">Все команды</option>
+            <option>cold blooded</option>
+            <option>swagger</option>
+            <option>blessedone</option>
+            <option>nova elite</option>
+            <option>raptors</option>
+            <option>phoenix flame</option>
+            <option>spgrind</option>
+          </select>
+        </div>
+
+        <div class="tablebox">
+          <table id="schedule">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Матч</th>
+                <th>Время</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-teams="cold blooded  next up">
+                <td>6 ноября</td>
+                <td>cold blooded — next up</td>
+                <td>17:45</td>
+              </tr>
+              <tr data-teams="blessedone  spgrind">
+                <td>6 ноября</td>
+                <td>blessedone — spgrind</td>
+                <td>18:30</td>
+              </tr>
+              <tr data-teams="nova elite  raptors">
+                <td>6 ноября</td>
+                <td>nova elite — raptors</td>
+                <td>19:15</td>
+              </tr>
+              <tr data-teams="swagger  phoenix flame">
+                <td>6 ноября</td>
+                <td>swagger — phoenix flame</td>
+                <td>20:00</td>
+              </tr> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Jump Next Gen — School Basketball League. Партнёр проекта — SOROX.
+      Тренировки — пн,ср,пт 18:00, спортзал дюсш.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

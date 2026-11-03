@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты и заявка в команду — Jump Next Gen</title>
+  <meta name="description" content="Контакты школьной баскетбольной лиги: как записаться в команду, связаться с организатором и подать заявку на участие в турнире.">
+  <meta name="keywords" content="контакты лиги, запись в команду, заявка на турнир, школьный баскетбол, тренер, организатор лиги, спортзал школы, баскетбол для школьников">
+  <meta name="author" content="Школьный спортивный клуб">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0d">
+
+  <meta property="og:title" content="Контакты и заявка — Jump Next Gen">
+  <meta property="og:description" content="Хотите играть? Заполните заявку, и тренер свяжется с вами. Здесь же контакты организаторов лиги.">
+  <meta property="og:image" content="https://USERNAME.github.io/school-basketball-league/images/preview.jpg">
+  <meta property="og:url" content="https://USERNAME.github.io/school-basketball-league/contacts.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jump Next Gen — школьная баскетбольная лига">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="https://www.shutterstock.com/image-vector/basketball-ball-flaming-fire-element-260nw-2732177127.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Oswald:wght@700&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSn2q4985VlWwznks-L_wLXfJPf_gEGO9jfqyFVVrgQ&s=10" alt="" width="38" height="38">
+        Jump <b>Next Gen</b>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu">Меню</button>
+
+      <nav id="menu" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="schedule.html">Матчи и таблица</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-title">
+      <div class="wrap">
+        <h1 class="logo-text">Контакты и заявка</h1>
+        <p>Хотите играть, судить или помогать? Напишите нам.</p>
+      </div>
+    </div>
+
+
+    <section>
+      <div class="wrap grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: start;">
+
+        <div class="card">
+          <h2 class="tag hot">Подать заявку</h2>
+
+          <form id="joinForm" novalidate>
+            <label for="name">Имя и фамилия</label>
+            <div>
+              <input id="name" required data-name="имя и фамилия" autocomplete="name">
+              <div class="err" aria-live="polite"></div>
+            </div>
+
+            <label for="cls">Класс</label>
+            <div>
+              <input id="cls" required data-name="класс" placeholder="Например, 9А">
+              <div class="err" aria-live="polite"></div>
+            </div>
+
+            <label for="mail">Электронная почта</label>
+            <div>
+              <input id="mail" type="email" required data-name="почта" autocomplete="email">
+              <div class="err" aria-live="polite"></div>
+            </div>
+
+            <p><button class="btn" type="submit">Отправить заявку</button></p>
+          </form>
+
+          <div id="done" class="ok hidden" role="status">
+            Заявка принята. Тренер напишет вам в течение трёх дней.
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="tag">Контакты</h2>
+
+          <p>
+            <b>Тренер лиги</b><br>
+            Апсалямов чингиз кайратович<br>
+            <a href="mailto:coach@example.com">coach@example.com</a>
+          </p>
+
+        <div class="card">
+          <h2 class="tag">Организаторы</h2>
+
+          <p>
+            <b>Тренер лиги</b><br>
+            Апсалямов чингиз кайратович<br>
+            <a href="mailto:coach@example.com">coach@example.com</a>
+          </p>
+
+          <p>
+            <b>Где играем</b><br>
+           арена сдюшор2<br>
+            Тренировки: пн,ср,пт 18:00.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Jump Next Gen — School Basketball League. Партнёр проекта — SOROX.
+      Тренировки — вт и чт, 16:00, спортзал школы.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
